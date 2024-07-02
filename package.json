@@ -26,6 +26,8 @@
     "@nuxt/eslint": "^0.3.13",
     "@nuxthq/studio": "^2.0.3",
     "eslint": "^9.5.0",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "vue-tsc": "^2.0.22"
   }
 }

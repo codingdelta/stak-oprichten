@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   extends: [process.env.NUXT_UI_PRO_PATH || "@nuxt/ui-pro"],
   runtimeConfig: {
     slackWebhookUrl: process.env.NUXT_SLACK_WEBHOOK_URL,
+    openAI: process.env.OPENAI_API_KEY,
   },
   modules: [
     "@nuxt/content",
@@ -14,6 +15,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-og-image",
     "@nuxthq/studio",
+    "nuxt-jsonld",
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -21,6 +23,11 @@ export default defineNuxtConfig({
       const globals = components.filter((c) => ["UButton"].includes(c.pascalName));
 
       globals.forEach((c) => (c.global = true));
+    },
+  },
+  nitro: {
+    experimental: {
+      tasks: true,
     },
   },
   colorMode: {

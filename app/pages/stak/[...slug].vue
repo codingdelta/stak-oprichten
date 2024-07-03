@@ -29,6 +29,21 @@ useServerSeoMeta({
   ogTitle: page.value.title,
   ogDescription: page.value.description,
 });
+
+useJsonld({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: page.value.title,
+  description: page.value.description,
+  url: page.value._url,
+  datePublished: page.value.date,
+  dateModified: page.value.dateModified || page.value.date,
+  author: {
+    "@type": "Organization",
+    name: "StakOprichten.nl",
+    url: "https://stakoprichten.nl",
+  },
+});
 </script>
 
 <template>

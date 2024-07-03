@@ -1,8 +1,9 @@
 <script setup lang="ts">
 
 
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent('hoofdstuk')))
-const contentNav = mapContentNavigation(navigation.value)
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent('stak')))
+let contentNav = mapContentNavigation(navigation.value)
+contentNav = contentNav[0].children
 </script>
 
 <template>

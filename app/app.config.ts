@@ -4,7 +4,7 @@ export default defineAppConfig({
     primary: "sky",
     gray: "cool",
     button: {
-      rounded: "rounded-full",
+      rounded: "rounded-lg",
       default: {
         size: "md",
       },

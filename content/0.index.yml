@@ -15,12 +15,14 @@ hero:
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
+      class: rounded-full
     - label: Hoofdstuk 1
       to: "/hoofdstuk/wat-is-een-stak"
       size: xl
       color: gray
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
+      class: rounded-full
   logos:
     title: Onze klanten en partners
     clients:
@@ -66,7 +68,7 @@ sections:
         icon: i-heroicons-users
     links:
       - label: Contact
-        to: /pro/guide/content
+        to: /contact
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true
@@ -100,10 +102,10 @@ features:
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
       icon: i-heroicons-chart-bar
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Vragen, neem contact op
+  description: Wij helpen je graag verder met het oprichten van een STAK. Neem vandaag nog contact op.
   links:
-    - label: Buy now
+    - label: Contact
       size: xl
       color: black
-      to: /pricing
+      to: /contact

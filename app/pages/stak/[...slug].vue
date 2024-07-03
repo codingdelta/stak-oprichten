@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { withoutTrailingSlash } from "ufo";
+import useToc from "~/composables/toc";
 definePageMeta({
   layout: "chapters",
 });
@@ -22,7 +23,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
 );
 
 const headline = computed(() => findPageHeadline(page.value));
-
+const contentNav = await useToc();
 useServerSeoMeta({
   title: page.value.title,
   description: page.value.description,
@@ -37,19 +38,33 @@ useJsonld({
   description: page.value.description,
   url: page.value._url,
   datePublished: page.value.date,
-  dateModified: page.value.dateModified || page.value.date,
+  dateModified: page.value.sitemap.lastmod || page.value.date,
   author: {
     "@type": "Organization",
     name: "StakOprichten.nl",
     url: "https://stakoprichten.nl",
   },
 });
+
+const accordionItem = [
+  {
+    label: "Alle hoofdstukken",
+    icon: "i-heroicons-information-circle",
+    defaultOpen: false,
+    slot: "chapters",
+  },
+];
 </script>
 
 <template>
   <UPage>
     <UPageHeader :title="page.title" :description="page.description" :links="page.links" :headline="headline" />
 
+    <UAccordion :items="accordionItem" class="lg:hidden">
+      <template #chapters>
+        <UNavigationTree :links="contentNav" />
+      </template>
+    </UAccordion>
     <UPageBody prose>
       <ContentRenderer v-if="page.body" :value="page" />
 

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     slackWebhookUrl: process.env.NUXT_SLACK_WEBHOOK_URL,
     openAI: process.env.OPENAI_API_KEY,
+    plausibleDomain: process.env.NUXT_PLAUSIBLE_DOMAIN,
   },
   modules: [
     "@nuxt/content",
@@ -16,7 +17,12 @@ export default defineNuxtConfig({
     "nuxt-og-image",
     "@nuxthq/studio",
     "nuxt-jsonld",
+    "@nuxt/scripts",
+    "@nuxtjs/sitemap",
   ],
+  site: {
+    url: "https://stakoprichten.nl",
+  },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     "components:extend": (components) => {

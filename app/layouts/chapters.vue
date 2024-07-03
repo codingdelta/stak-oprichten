@@ -1,9 +1,7 @@
 <script setup lang="ts">
+import useToc from "~/composables/toc";
 
-
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(queryContent('stak')))
-let contentNav = mapContentNavigation(navigation.value)
-contentNav = contentNav[0].children
+const contentNav = await useToc();
 </script>
 
 <template>
@@ -22,7 +20,5 @@ contentNav = contentNav[0].children
       </UPage>
     </UContainer>
     <AppFooter />
-
   </div>
-
 </template>

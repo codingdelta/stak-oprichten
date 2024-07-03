@@ -34,8 +34,8 @@ const { data: chapters } = await useAsyncData("chapters", () => queryContent("st
                     <h2 class="text-3xl">{{ chapter.title }}</h2>
                     <p>{{ chapter.description }}</p>
                   </div>
-                  <div class="w-1/3">
-                    <NuxtImg src="/images/stak.svg" />
+                  <div v-if="chapter.image" class="w-1/3">
+                    <NuxtImg :src="chapter.image.src" :alt="chapter.image.alt" />
                   </div>
                 </div>
                 <UButton>Lees</UButton>

@@ -15,6 +15,12 @@ useHead({
   },
 });
 
+useScript({
+  src: "https://plausible.io/js/script.tagged-events.js",
+  defer: true,
+  "data-domain": useRuntimeConfig().plausibleDomain,
+});
+
 useSeoMeta({
   titleTemplate: "Snel en betrouwbaar een STAK oprichten",
   ogImage: "https://saas-template.nuxt.dev/social-card.png",

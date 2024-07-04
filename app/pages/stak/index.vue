@@ -26,7 +26,7 @@ const { data: chapters } = await useAsyncData("chapters", () => queryContent("st
                 v-for="(chapter, index) in chapters"
                 :key="chapter._id"
                 :to="chapter._path"
-                class="rounded-lg border bg-slate-50 p-5"
+                class="flex flex-col gap-5 rounded-lg border bg-slate-50 p-5"
               >
                 <span class="font-bold">Hoofdstuk {{ index + 1 }}</span>
                 <div class="flex items-center justify-between">
@@ -38,7 +38,7 @@ const { data: chapters } = await useAsyncData("chapters", () => queryContent("st
                     <NuxtImg :src="chapter.image.src" :alt="chapter.image.alt" />
                   </div>
                 </div>
-                <UButton>Lees</UButton>
+                <div><UButton>Lees</UButton></div>
               </NuxtLink>
             </div>
           </div>

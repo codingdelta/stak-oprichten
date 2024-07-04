@@ -31,6 +31,14 @@ useServerSeoMeta({
   ogDescription: page.value.description,
 });
 
+defineOgImage({
+  component: "Stak",
+  props: {
+    title: page.value.title,
+    description: page.value.description,
+  },
+});
+
 useJsonld({
   "@context": "https://schema.org",
   "@type": "Article",

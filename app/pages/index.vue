@@ -15,8 +15,6 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description,
 });
-
-const email = ref("");
 </script>
 
 <template>
@@ -53,7 +51,7 @@ const email = ref("");
       </div>
     </ULandingHero>
     <ULandingLogos id="clients" :title="page.hero.logos.title">
-      <div class="flex justify-center">
+      <div class="mx-auto">
         <div class="grid grid-cols-2 place-items-center gap-10 md:grid-cols-4">
           <NuxtLink
             v-for="client in page.hero.logos.clients"

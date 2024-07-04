@@ -26,7 +26,7 @@
     "@vueuse/nuxt": "^10.11.0",
     "nuxt": "^3.12.2",
     "nuxt-jsonld": "^2.0.8",
-    "nuxt-og-image": "^3.0.0-rc.54",
+    "nuxt-og-image": "3.0.0-rc.54",
     "openai": "^4.52.3",
     "pinia": "^2.1.7",
     "superjson": "^2.2.1",

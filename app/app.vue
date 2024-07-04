@@ -23,9 +23,17 @@ useScript({
 
 useSeoMeta({
   titleTemplate: "Snel en betrouwbaar een STAK oprichten",
-  ogImage: "https://saas-template.nuxt.dev/social-card.png",
+  // ogImage: "https://saas-template.nuxt.dev/social-card.png",
   twitterImage: "https://saas-template.nuxt.dev/social-card.png",
   twitterCard: "summary_large_image",
+});
+
+defineOgImage({
+  component: "Stak",
+  props: {
+    title: "Stak Oprichten",
+    description: "Wij helpen met het oprichten van een STAK voor je bedrijf en werknemers",
+  },
 });
 </script>
 

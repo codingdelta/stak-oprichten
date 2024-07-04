@@ -50,6 +50,9 @@ export default defineNuxtConfig({
   typescript: {
     strict: false,
   },
+  features: {
+    inlineStyles: false,
+  },
   future: {
     compatibilityVersion: 4,
   },

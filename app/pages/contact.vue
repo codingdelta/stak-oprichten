@@ -11,7 +11,7 @@
       </div>
     </div>
   </ULandingHero>
-  <ULandingSection title="Contact formulier">
+  <ULandingSection id="form" title="Contact formulier">
     <div class="mx-auto sm:w-1/2">
       <UForm :schema="schema" :state="state" class="flex flex-col gap-2" @submit="onSubmit">
         <UFormGroup name="name" label="Naam">

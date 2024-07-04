@@ -34,8 +34,9 @@ const links = [
   >
     <template #logo> StakOprichten.nl </template>
 
-    <!-- <template #right>
-    </template> -->
+    <template #right>
+      <UButton to="/contact#form">Contact</UButton>
+    </template>
 
     <!-- <template #panel>
       <UNavigationTree :links="mapContentNavigation(navigation)" default-open />

@@ -43,7 +43,27 @@ function onSubmit() {
     <template #top>
       <UFooterColumns :links="links">
         <template #right>
-          <form @submit.prevent="onSubmit">
+          <div>
+            Onderdeel van <NuxtLink class="text-blue-500 underline" to="https://rounde.nl" external>RoundE</NuxtLink>.
+          </div>
+          <span>KVK: 77615999</span>
+          <div>
+            <NuxtLink class="text-blue-500 underline" to="https://rounde.nl/terms" external
+              >Algemene Voorwaarden</NuxtLink
+            >
+            en
+            <NuxtLink class="text-blue-500 underline" to="https://rounde.nl/disclaimer" external>Disclaimer</NuxtLink>
+            van RoundE
+          </div>
+          <div>
+            <NuxtLink
+              class="text-blue-500 underline"
+              to="https://drive.google.com/file/d/12mKj8HpWQVL-CBK8HaXMhwElsdVhKxcW/view?usp=drive_link"
+              external
+              >Algemene Voorwaarden Coding Delta</NuxtLink
+            >
+          </div>
+          <!-- <form @submit.prevent="onSubmit">
             <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
               <UInput
                 v-model="email"
@@ -67,7 +87,7 @@ function onSubmit() {
                 </template>
               </UInput>
             </UFormGroup>
-          </form>
+          </form> -->
         </template>
       </UFooterColumns>
     </template>

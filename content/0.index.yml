@@ -10,7 +10,7 @@ hero:
   #   icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: STAK oprichten
-      to: "/signup"
+      to: "/contact#contact"
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid

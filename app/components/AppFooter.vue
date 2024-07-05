@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const links = [
   {
-    label: "Befrijf",
+    label: "Bedrijf",
     children: [
       {
         label: "Contact",
@@ -14,6 +14,14 @@ const links = [
       {
         label: "Hoofdstukken",
         to: "/stak",
+      },
+      {
+        label: "ChatGPT",
+        to: "https://chatgpt.com/share/3f78e698-f937-49f9-91ea-25b21d595172",
+      },
+      {
+        label: "Perplexity",
+        to: "https://www.perplexity.ai/search/what-does-stakoprichten-nl-do-27N9KsJITIWoyg7eMqT2Lg",
       },
     ],
   },

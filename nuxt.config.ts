@@ -19,9 +19,13 @@ export default defineNuxtConfig({
     "nuxt-jsonld",
     "@nuxt/scripts",
     "@nuxtjs/sitemap",
+    "@nuxtjs/seo",
   ],
   site: {
     url: "https://stakoprichten.nl",
+  },
+  sitemap: {
+    exclude: ["/blog/**"],
   },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)

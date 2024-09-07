@@ -15,6 +15,11 @@ const links = [
         label: "Hoofdstukken",
         to: "/stak",
       },
+      {
+        label: "Dev to",
+        to: "https://dev.to/agencyhunt/web-agencies-in-the-netherlands-4a21",
+        target: "_blank",
+      },
     ],
   },
 ];

@@ -17,7 +17,7 @@ hero:
       trailing: true
       class: rounded-full
     - label: Hoofdstuk 1
-      to: "/hoofdstuk/wat-is-een-stichting-administratiekantoor"
+      to: "stak/wat-is-een-stichting-administratiekantoor"
       size: xl
       color: gray
       icon: i-heroicons-arrow-right-20-solid
@@ -44,7 +44,7 @@ sections:
     align: left
     links:
       - label: Leer meer
-        to: /wat-is-een-stak
+        to: stak/wat-is-een-stichting-administratiekantoor
         color: gray
         icon: i-heroicons-arrow-right-20-solid
         trailing: true

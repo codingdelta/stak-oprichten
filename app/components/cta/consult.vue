@@ -66,6 +66,8 @@ async function onSubmit() {
       <UFormGroup name="phone" label="Telefoonnummer">
         <UInput v-model="state.phone" placeholder="Telefoonnummer" />
       </UFormGroup>
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACDBONRlilyJZD_T"></div>
+
       <div>
         <UButton type="submit">Aanvragen</UButton>
       </div>

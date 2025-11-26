@@ -21,6 +21,12 @@ useScript({
   "data-domain": useRuntimeConfig().plausibleDomain,
 });
 
+useScript({
+  src: "https://challenges.cloudflare.com/turnstile/v0/api.js",
+  defer: true,
+  async: true,
+});
+
 useSeoMeta({
   titleTemplate: "Snel en betrouwbaar een STAK oprichten",
   // ogImage: "https://saas-template.nuxt.dev/social-card.png",

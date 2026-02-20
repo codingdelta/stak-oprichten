@@ -68,6 +68,11 @@ function onSubmit() {
               >Algemene Voorwaarden Coding Delta</NuxtLink
             >
           </div>
+          <div>
+            <NuxtLink class="text-blue-500 underline" to="https://getalternatives.eu" external
+              >Get Alternatives</NuxtLink
+            >
+          </div>
           <!-- <form @submit.prevent="onSubmit">
             <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
               <UInput
